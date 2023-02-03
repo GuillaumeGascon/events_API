@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <style type="text/css">
+      /* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+      body{
+          margin: 0;
+          padding: 0;
+      }
+      img{
+          border: 0 none;
+          height: auto;
+          line-height: 100%;
+          outline: none;
+          text-decoration: none;
+      }
+      a img{
+          border: 0 none;
+      }
+      table, td{
+        border-collapse:collapse;
+      }
+      .main-container {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 48px 0;
+      }
+      .center-column {
+        width: 600px;
+        max-width: 600px;
+        background-color: #121D32;
+        border-radius: 16px;
+        margin: 0 auto;
+      }
+      .center-column > .line {
+        width: 100%;
+        height: 16px;
+        background-color: #A8FD86;
+        border-radius: 16px 16px 0 0;
+      }
+      .center-column > .column-content {
+        width: 100%;
+        padding: 24px;
+      }
+      .center-column > .column-content > .text-container {
+        width: 100%;
+      }
+      h1 {
+        font-size: 2.75em;
+        line-height: 3.5em;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+        margin: 16px 0 48px 0;
+        color: #121D32;
+      }
+      h3 {
+        font-size: 1.5em;
+        line-height: 1.875em;
+        font-weight: 600;
+        width: 100%;
+        text-align: left;
+        margin: 8px 0 16px 0;
+        color: #FAFAFA;
+      }
+      p {
+        max-width: 552px;
+        color: #FAFAFA;
+      }
+      h4 {
+        font-size: 1.25em;
+        line-height: 1.875em;
+        font-weight: 400;
+        width: 100%;
+        text-align: left;
+        margin: 0px 0px 8px 0;
+        color: #EFF1F5;
+      }
+      h2 {
+        font-size: 2em;
+        line-height: 2.5em;
+        font-weight: 600;
+        letter-spacing: 16px;
+        width: 100%;
+        text-align: left;
+        margin: 0 0 8px 0;
+        color: #A8FD86;
+      }
+      p {
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Ticketboard</h1>
+      <div class="center-column">
+        <div class="line"></div>
+        <div class="column-content">
+          <h3>Welcome to Ticketboard</h3>
+          <div class="text-container">
+            <p>To ensure that you've entered the right e-mail, we need you to enter the code bellow inside the application.</p>
+          </div>
+          <h4>Your verification code</h4>
+          <h2>{{ code }}</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
